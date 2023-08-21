@@ -1,0 +1,113 @@
+.center {
+  display: flex;
+  justify-content: center;
+}
+body {
+  background: #4284ed;
+  align-items: center;
+  font-family: sans-serif;
+}
+.card {
+  background: white;
+  width: 90vw;
+  max-width: 450px;
+  border-radius: 10px;
+  box-shadow: 9px 10px 91px -4px rgba(73, 73, 73, 0.41);
+}
+.title {
+  padding: 0 10px;
+  border-bottom: 1px solid gray;
+}
+.content {
+  margin: 10px;
+  flex-direction: column;
+  gap: 30px;
+  padding: 25px 0;
+}
+.pass {
+  position: relative;
+}
+.pass i {
+  position: absolute;
+  right: 35px;
+  top: 8px;
+  cursor: pointer;
+  background: white;
+}
+i.hide {
+  display: none;
+}
+.pass {
+  flex-direction: column;
+  gap: 20px;
+}
+.pass span {
+  display: block;
+  width: 95%;
+  height: 4px;
+  background: #e6e6e6;
+  border-radius: 10px;
+}
+.pass span span {
+  height: 100%;
+  width: 53%;
+  background: #e2d04d;
+  transition: 0.5s;
+}
+
+input:not(input[type="checkbox"]),
+button {
+  width: 95%;
+  outline: none;
+  padding: 5px;
+  font-size: 18px;
+  border: gray 1px solid;
+  border-radius: 4px;
+}
+input[type="range"] {
+  width: 90%;
+  height: 1px;
+  border: none;
+  background-color: #eee;
+  display: block;
+  margin: auto;
+  accent-color: #4284ed;
+}
+
+.length div {
+  justify-content: space-between;
+}
+button {
+  color: white;
+  padding: 10px;
+  background: #4284ed;
+  margin: auto;
+  border: none;
+  cursor: pointer;
+}
+h4 {
+  padding: 0 15px;
+}
+
+.pass-settings div div {
+  display: flex;
+  align-items: center;
+}
+.pass-settings div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 0 5px;
+}
+
+@media screen and (max-width: 425px) {
+  .pass-settings div {
+    grid-template-columns: 1fr;
+  }
+  .content {
+    gap: 0;
+  }
+  button {
+    margin-top: 20px;
+  }
+}
